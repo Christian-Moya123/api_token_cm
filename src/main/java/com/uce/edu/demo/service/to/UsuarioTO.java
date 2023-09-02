@@ -2,6 +2,8 @@ package com.uce.edu.demo.service.to;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
+
 public class UsuarioTO implements Serializable{
 
 	private static final long serialVersionUID = 1L;
@@ -11,6 +13,10 @@ public class UsuarioTO implements Serializable{
 	private String username;
 	
 	private String password;
+	
+	private String semilla;
+	
+	private Integer tiempoVigencia;
 	
 
 	public Integer getId() {
@@ -40,6 +46,23 @@ public class UsuarioTO implements Serializable{
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
+
+	public String getSemilla() {
+		return semilla;
+	}
+
+	public void setSemilla(String semilla) {
+		this.semilla = semilla;
+	}
+
+	public Integer getTiempoVigencia() {
+		return tiempoVigencia;
+	}
+
+	public void setTiempoVigencia(Integer tiempoVigencia) {
+		this.tiempoVigencia = tiempoVigencia;
+	}
+	
 	
 	
 }

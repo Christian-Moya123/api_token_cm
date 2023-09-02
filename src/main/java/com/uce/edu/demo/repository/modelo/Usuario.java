@@ -22,6 +22,12 @@ public class Usuario {
 	@Column(name = "usua_password")
 	private String password;
 	
+	@Column(name = "usua_semilla")
+	private String semilla;
+	
+	@Column(name="usua_tiempo_vigencia")
+	private Integer tiempoVigencia;
+	
 	
 	public Integer getId() {
 		return id;
@@ -41,6 +47,20 @@ public class Usuario {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	public String getSemilla() {
+		return semilla;
+	}
+	public void setSemilla(String semilla) {
+		this.semilla = semilla;
+	}
+	public Integer getTiempoVigencia() {
+		return tiempoVigencia;
+	}
+	public void setTiempoVigencia(Integer tiempoVigencia) {
+		this.tiempoVigencia = tiempoVigencia;
+	}
+	
+	
 	
 	
 

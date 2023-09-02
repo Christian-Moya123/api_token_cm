@@ -28,4 +28,10 @@ public class UsuarioRepositoryImpl implements IUsuarioRepository {
 		return myQuery.getSingleResult();
 	}
 
+	@Override
+	public void insertarEstudiante(Usuario usuario) {
+		// TODO Auto-generated method stub
+		this.entityManager.persist(usuario);
+	}
+
 }
